@@ -93,15 +93,16 @@
         }
         switch($m){
             case  1:
+            case 10:
             $m = 1;
             break;         
             case 2:
-            $m = 4;
-            break;
             case 3:
+            case 11:
             $m = 4;
             break;
             case 4:
+            case 7:
             $m = 0;
             break;
             case 5:
@@ -110,22 +111,11 @@
             case 6:
             $m = 5;
             break;
-            case 7: 
-            $m = 0;
-            break;
             case 8: 
             $m = 3;
             break;
             case 9: 
-            $m = 6;
-            break;
-            case 10:
-            $m = 1;
-            break;
-            case 11:
-            $m = 4;
-            break;   
-            case 12: 
+            case 12:
             $m = 6;
             break; 
             default:
