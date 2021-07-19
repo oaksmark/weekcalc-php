@@ -62,15 +62,13 @@
     
                     if($ctr == 4 && $i % 100 == 0 && ($i / 100) % 4 !== 0){
                         $ctr = 0;
-                        $bst = false;
-                                
+                        $bst = false;                                
     
             }else if($ctr == 4){
                 $k++;
                 $ctr = 0;
                 $bst = true;
-                $ltYbis = $i;
-               
+                $ltYbis = $i;              
                 
             }
             
@@ -81,8 +79,7 @@
             if($k == 7){
                 $k = 0;
                 
-            }
-    
+            }   
     
         }
         
@@ -182,21 +179,16 @@
             ?>
             <p><a href="javascript:history.go(-1)" ><input type="submit" class="bt" value="VOLTAR"></a></p>
            <?php
-           $data = date("d/m/Y \à\s\ H:i:s");
-          
+           $data = date("d/m/Y \à\s\ H:i:s");          
                       
            echo "Consulta realizada em: <br/> $data";
            ?>
 
-           </div>
-           
-            
+           </div>            
                   
-        </div>
-       
+        </div>       
    
-    </section>
-    
+    </section>   
     
 </body>
 </html>
