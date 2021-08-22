@@ -22,28 +22,23 @@
                 <div><p>Dia: 
                     <select class="inpt" name="dd" id="dd">
                         <?php 
-                        for($i=1;$i<=31;$i++):
-                            ?>
-                            <option value="<?php echo $i?>"><?php echo $i?></option>
-                            <?php 
-                        endfor ?>
+                            for($i=1;$i<=31;$i++):
+                                ?>
+                                <option value="<?php echo $i?>"><?php echo $i?></option>
+                                <?php 
+                            endfor ?>
                     </select></p>
                 </div>
                 
                 <div><p>Mês: 
                     <select class="inpt" name="mm" id="mm">
-                    <option value="01">Janeiro</option>
-                    <option value="02">Fevereiro</option>
-                    <option value="03">Março</option>
-                    <option value="04">Abril</option>
-                    <option value="05">Maio</option>
-                    <option value="06">Junho</option>
-                    <option value="07">Julho</option>
-                    <option value="08">Agosto</option>
-                    <option value="09">Setembro</option>
-                    <option value="10">Outubro</option>
-                    <option value="11">Novembro</option>
-                    <option value="12">Dezembro</option>
+                        <?php
+                            $m = array("Janeiro","Fevereiro","Março","Abril","Maio","Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro");
+                            for($i=0;$i<12;$i++):
+                                ?> 
+                                <option value="<?php echo $i?>"><?php echo $m[$i]?></option>
+                                <?php
+                            endfor ?>
                     </select></p>
                 </div>
                 <p>Ano: <input type="number" class="inpt" placeholder="  Digite o ano" name="year" id="yyyy" min="0" max="9999"></p>
@@ -57,7 +52,8 @@
                     <span class="checkmark"></span>
                 </label>
                 <p><input type="submit" class="bt" value="CALCULAR"id="calcular"></p>
-                <p id="res">Saiba o dia da semana da data desejada e se o ano é bissexto de acordo com o calendário <a href="https://pt.wikipedia.org/wiki/Ano_bissexto#Calend%C3%A1rio_Gregoriano" target="balnk" >Gregoriano. </a>
+                <p id="res">Saiba o dia da semana da data desejada e se o ano é bissexto de acordo com o calendário 
+                    <a href="https://pt.wikipedia.org/wiki/Ano_bissexto#Calend%C3%A1rio_Gregoriano" target="balnk" >Gregoriano. </a>
                 </p>      
             </div>
 
